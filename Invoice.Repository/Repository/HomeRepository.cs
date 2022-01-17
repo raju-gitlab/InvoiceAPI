@@ -59,7 +59,7 @@ namespace Invoice.Repository.Repository
                 var findResult = from p in result where p.ProductId.ToString() == productId.FirstOrDefault().ToString() select p;
                 if(findResult.FirstOrDefault() != null)
                 {
-                    return true;
+                    return true; 
                 }
                 else
                 {
